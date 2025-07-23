@@ -1,0 +1,15 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "container.*": {
+        "items": "emerald",
+        "count": {
+          "min": 5,
+          "max": 100000
+        }
+      }
+    }
+  }
+}

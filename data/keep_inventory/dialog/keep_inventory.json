@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Keep Inventory",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": ""
+  },
+  "exit_action": {
+    "label": "Leave",
+    "action": {
+      "type": "minecraft:run_command",
+      "command": "/tellraw @s [{\"text\":\"Number of keep inventory uses left: \", \"color\":\"aqua\"},{\"score\":{\"name\":\"keep_inventory\",\"objective\":\"keep_inventory\"}}]"
+    }
+  },
+  "actions": [
+    {
+      "label": "Add one ",
+      "tooltip": "5 Emeralds",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function keep_inventory:add_keep_inventory"
+      }
+    }
+  ]
+}
