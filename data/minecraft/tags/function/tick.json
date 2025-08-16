@@ -1,5 +1,6 @@
 {
   "values": [
-    "keep_inventory:keep_inventory"
+    "keep_inventory:keep_inventory",
+    "keep_inventory:add_keep_inventory"
   ]
 }

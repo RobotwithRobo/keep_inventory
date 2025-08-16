@@ -5,6 +5,13 @@
     "type": "minecraft:plain_message",
     "contents": ""
   },
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "number",
+      "label": "              Number you want to buy"
+    }
+  ],
   "exit_action": {
     "label": "Leave",
     "action": {
@@ -14,11 +21,11 @@
   },
   "actions": [
     {
-      "label": "Add one ",
-      "tooltip": "5 Emeralds",
+      "label": "Add the number above",
+      "tooltip": "5 Emeralds Each",
       "action": {
-        "type": "minecraft:run_command",
-        "command": "function keep_inventory:add_keep_inventory"
+        "type": "dynamic/run_command",
+        "template": "scoreboard players add @s keep_inventory $(number)"
       }
     }
   ]

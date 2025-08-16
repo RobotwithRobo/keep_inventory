@@ -1,7 +1,7 @@
 {
   "pack": {
     "description": "Allows for one time keep inventory",
-    "min_format": [83,1],
-    "max_format": [83,1]
+    "min_format": [83,0],
+    "max_format": [83,0]
   }
 }
